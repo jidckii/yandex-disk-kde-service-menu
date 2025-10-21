@@ -1,3 +1,6 @@
 # Yandex.Disk KDE Service Menu
 
-![](preview.png)
+![](img/preview.png)
+
+![](img/preview_publish.png)
+![](img/preview_unpublish.png)
