@@ -30,3 +30,12 @@ depends:
   - libnotify
   - kdialog
   - xsel
+
+deb:
+  signature:
+    key_file: ${GPG_KEY_FILE}
+    key_id: ${GPG_KEY_ID}
+rpm:
+  signature:
+    key_file: ${GPG_KEY_FILE}
+    key_id: ${GPG_KEY_ID}
