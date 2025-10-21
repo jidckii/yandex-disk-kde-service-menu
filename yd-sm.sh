@@ -21,6 +21,13 @@ if ! command -v yandex-disk &> /dev/null; then
     exit 1
 fi
 
+YD_STATUS=$(yandex-disk status)
+
+if [ $? -ne 0 ]; then
+    kdialog --title "Ошибка" --error "$YD_STATUS"
+    exit 1
+fi
+
 publish() {
     RESULT=$(yandex-disk publish "$1" 2>&1)
 
