@@ -11,7 +11,7 @@ clean: ## Очистить папку сборки
 
 build: dist/.build-stamp ## Собрать пакет
 
-dist/.build-stamp: yandex-disk-kde-service-menu.desktop yd-sm.sh nfpm/scripts/postinstall.sh nfpm.yaml.tpl
+dist/.build-stamp: yandex-disk-kde-service-menu.desktop yd-sm.sh nfpm/scripts/* nfpm.yaml.tpl
 	mkdir -p dist
 	VERSION=$(VERSION) envsubst '$${VERSION}' <nfpm.yaml.tpl >nfpm.yaml
 	nfpm package --config nfpm.yaml --packager deb --target dist
