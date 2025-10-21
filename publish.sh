@@ -46,7 +46,7 @@ for i in alt codeberg; do
 
     echo "Uploading ${RPM_PKG} to ${BASE_URL} for ALT Linux ..."
     curl -sSL --user ${FORGEJO_USER}:${FORGEJO_TOKEN} \
-        --upload-file ${DEB_PKG} \
+        --upload-file ${RPM_PKG} \
         ${BASE_URL}/api/packages/${FORGEJO_USER}/alt/upload
 
     ARCH_PKG=$(ls dist/*.pkg.tar.zst)
