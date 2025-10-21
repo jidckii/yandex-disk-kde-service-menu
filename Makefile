@@ -4,7 +4,7 @@
 VERSION := 1.0.0
 
 .DEFAULT_GOAL := build
-.PHONY: build clean
+.PHONY: build clean publish
 
 clean: ## Очистить папку сборки
 	rm -rf dist
@@ -18,3 +18,7 @@ dist/.build-stamp: yandex-disk-kde-service-menu.desktop yd-sm.sh nfpm/scripts/po
 	nfpm package --config nfpm.yaml --packager rpm --target dist
 	nfpm package --config nfpm.yaml --packager archlinux --target dist
 	touch dist/.build-stamp
+
+publish:
+	@echo "Publishing packages..."
+	./publish.sh

@@ -25,6 +25,7 @@ contents:
 
 scripts:
   postinstall: "nfpm/scripts/postinstall.sh"
+  postremove: "nfpm/scripts/postremove.sh"
 
 depends:
   - libnotify
