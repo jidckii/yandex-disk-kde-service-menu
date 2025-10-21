@@ -1,0 +1,17 @@
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=all/all;
+Actions=YandexPublish;YandexUnpublish;
+
+[Desktop Action YandexPublish]
+Name=Яндекс.Диск Опубликовать
+Name[en]=Yandex.Disk Publish
+Icon=emblem-shared
+Exec=yd-sm.sh publish %f
+
+[Desktop Action YandexUnpublish]
+Name=Яндекс.Диск Депубликовать 
+Name[en]=Yandex.Disk Unpublish
+Icon=emblem-locked
+Exec=yd-sm.sh unpublish %f
