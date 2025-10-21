@@ -60,7 +60,19 @@ publish    make file/folder public, output public link to STDOUT.
 
 ### Вручную
 
-
+```bash
+(   
+    cd $(mktemp -d)
+    curl -sSLf -O https://raw.githubusercontent.com/jidckii/yandex-disk-kde-service-menu/refs/heads/main/yandex-disk-kde-service-menu.desktop
+    curl -sSLf -O https://raw.githubusercontent.com/jidckii/yandex-disk-kde-service-menu/refs/heads/main/yd-sm.sh
+    mkdir -p ~/.local/share/kio/servicemenus
+    install yandex-disk-kde-service-menu.desktop ~/.local/share/kio/servicemenus/
+    chmod +x ~/.local/share/kio/servicemenus/yandex-disk-kde-service-menu.desktop
+    sudo install yd-sm.sh /usr/local/bin/
+    sudo chmod +x /usr/local/bin/yd-sm.sh
+    kbuildsycoca6
+)
+```
 
 ## Ссылки и благодарности
 
