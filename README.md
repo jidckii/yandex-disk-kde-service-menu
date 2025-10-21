@@ -78,3 +78,8 @@ publish    make file/folder public, output public link to STDOUT.
 
 - При поддержке [tuna.am](https://tuna.am)
 - Оригинальный но устаревший проект для KDE 4 <https://github.com/kors2m/YandexDisk_SM>
+
+---
+
+- [github](https://github.com/jidckii/yandex-disk-kde-service-menu)
+- [alt_space](https://altlinux.space/jidckii/yandex-disk-kde-service-menu)
